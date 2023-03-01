@@ -1,0 +1,90 @@
+*, body, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    padding: 0px 5px;
+    margin: auto;
+    overflow-x: hidden;
+}
+.h1{
+    text-align:center;
+    top: 45%;
+    position: relative;
+}
+.load{
+    height: 100%;
+    width: 100%;
+    top:0px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background:black;
+    display: block;
+}
+.msload{   
+    font-family: algerian;
+    font-size: 90px;
+    letter-spacing: 10px;
+    margin: auto;
+    animation: animer 2s linear infinite;
+    color: #6e6e6e;
+}
+@keyframes animer {
+    0%{ color: #eedc15e8; text-shadow: 8px 4px 9px rgb(226, 240, 22); }
+    90%{ color: #ffb300ec ; text-shadow: 10px 5px 9px orange;}
+    100%{ color:  #6e6e6e }
+}
+.msload:nth-child(0){ animation-delay: 0.1s; }
+.msload:nth-child(1){ animation-delay: 0.2s; }
+.msload:nth-child(2){ animation-delay: 0.3s; }
+.msload:nth-child(3){ animation-delay: 0.4s; }
+.msload:nth-child(4){ animation-delay: 0.5s; }
+.msload:nth-child(5){ animation-delay: 0.6s; }
+.msload:nth-child(6){ animation-delay: 0.7s; }
+.msload:nth-child(7){ animation-delay: 0.8s; }
+.msload:nth-child(8){ animation-delay: 0.9s; }
+.msload:nth-child(9){ animation-delay: 1s; }
+.mnv{
+    padding: 30px 0px;
+}
+@keyframes mnout { 0%{ top: 0px; }
+        100%{ top: -360px}
+    }
+    @keyframes mnin { 0%{ top: -360px; }
+    100%{ top: 0px}
+}
+footer{ position:sticky; margin-top: 10px; bottom: 0px; height: 100px;  width: 100%;}
+#nav{  top : 0; transition: 2s; }
+.mul{
+    margin: auto;
+    padding: 0px 4px;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+.smn{ margin: 10px auto auto auto; }
+.mlid{ width: 19%; }
+.mli{ font-family: cursive; height: 60px; align-items: center; background-color:#023b64;
+    text-align: center; border-radius: 10px; font-size: 100%;
+     font-weight: bolder; width:100%; }
+a:hover, option:hover, .select:hover{ background-color:white; color: rgb(12, 111, 203); border:2px solid rgb(0, 110, 255); }
+a, .select{  
+    border: none;
+    margin: auto;
+    display: block;
+    color: aliceblue;
+    background-color: #006eff;
+    height: 50%;
+    font-size: 22px;
+    text-decoration: none;
+    
+}
+.hometitle{ align-self: right; font-family: cursive;  }
+.animtitle{ background-color: #023b64; 
+background-position: center;
+background-size: cover;
+}
